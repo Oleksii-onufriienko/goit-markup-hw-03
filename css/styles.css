@@ -7,7 +7,7 @@
 /* #2F303A колір футера */
 /* #F5F4FA колір bg кпопок */
 /*  */
-:root{
+:root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --select-text-color: #2196F3;
@@ -22,33 +22,86 @@
 
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list {
     list-style: none;
 }
-.page{
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    
+    width: 1200px;
+}
+
+.page {
     color: var(--primary-text-color);
     background-color: #F5F5F5;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
-.page a {
+
+/* .page a {
     text-decoration: none;
-}
+} */
 
 /* ЛОГО */
-.logo{
+.logo {
     color: var(--title-text-color);
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
-        font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    font-family: Raleway, sans-serif;
 }
 
-.logo-first{
-    color: var(--select-text-color) 
- }
+.logo-first {
+    color: var(--select-text-color)
+}
 
-.footer .logo{
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
     color: var(--second-color-logo-footer);
 }
 
@@ -57,7 +110,7 @@
     color: var(--title-text-color);
 }
 
-.site-nav .link{
+.site-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -66,13 +119,14 @@
 }
 
 .link:hover,
-.link:focus{
+.link:focus {
     color: var(--select-text-color);
 }
 
-.site-nav .link.current{
+.site-nav .link.current {
     color: var(--select-text-color);
 }
+
 .auth-nav .link {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -82,14 +136,17 @@
 }
 
 .auth-nav .link:hover,
-.auth-nav .link:focus{
+.auth-nav .link:focus {
     color: var(--select-text-color);
 }
+
 /* Герой */
-.hero{
-    color:black
+.hero {
+    color: black
 }
-.hero-title{
+
+.hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,50 +156,69 @@
 }
 
 /* Секція  */
+.section{
+    margin-bottom: 94px;
+    margin-top: 94px;
+
+
+    background-color: tomato;
+}
 .section h1,
 .section h2,
-.section h3{
+.section h3 {
     color: var(--title-text-color);
 }
 
-.section-title{
+.section-title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
     text-align: center;
 
 }
-.list .title{
+
+.list .title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.list .text{
+.list .text {
     font-weight: 400;
     line-height: 1.71;
     font-size: 14px;
 }
 
-.list .com-title{
+.list .com-title {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
 }
 
-.list .com-text{
+.list .com-text {
     font-weight: 400;
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
 }
+
 /* FOOTER */
-.footer{
+.footer {
     background-color: var(--footer-bg-color);
 }
-.list .addr-mail-tel{
+
+.list .addr-mail-tel {
+    display: inline-block;
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -154,11 +230,16 @@
 .list .addr-mail-tel:focus {
     color: var(--select-text-color);
 }
-.list .addr-city{
+
+.list .addr-city {
+    display: inline-block;
+    margin-bottom: 9px;
+
     font-style: normal;
     color: var(--addr-color-city);
     background: #2F303A;
 }
+
 .list .addr-city:hover,
 .list .addr-city:focus {
     color: var(--select-text-color);
@@ -166,6 +247,12 @@
 
 /* Button */
 .hero .button-hero {
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    min-width: 216px;
+
+
     color: var(--button-select-text-color);
     background-color: var(--button-select-color);
     font-size: 16px;
@@ -174,35 +261,42 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+
 }
 
-.button{
+.button {
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    min-width: 73px;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    }
+}
 
 .button:hover,
-.button:focus{
+.button:focus {
     color: var(--button-select-text-color);
     background-color: var(--button-select-color);
 }
 
 /* Картки портфоліо */
- .card{ 
+.card {
     color: var(--primary-text-color);
 }
 
-.card .card-header{
+.card .card-header {
     color: var(--title-text-color);
     font-size: 18px;
-    line-height: 2;  
+    line-height: 2;
     letter-spacing: 0.06em;
     font-weight: 700;
 }
-.card .card-text{
+
+.card .card-text {
     font-size: 16px;
     line-height: 1.88;
     font-weight: 400;

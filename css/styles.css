@@ -1,0 +1,209 @@
+/* #757575 основной цвет текста обзацев  */
+/* #212121 основной зоголовков */
+/* #2196F3 цвет выделения */
+/* #F5F5F5; основной цвет фона  */
+/* #F5F4FA вторичный цвет фона */
+/* #FFFFFF цвет фона хэдера */
+/* #2F303A колір футера */
+/* #F5F4FA колір bg кпопок */
+/*  */
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --select-text-color: #2196F3;
+    --addr-color-tel-mail: rgba(255, 255, 255, 0.6);
+    --addr-color-city: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    --second-color-logo-footer: #FFFFFF;
+    --button-bg-color: #F5F4FA;
+    --button-text-color: #212121;
+    --button-select-color: #2196F3;
+    --button-select-text-color: #FFFFFF;
+
+}
+
+.list {
+    list-style: none;
+}
+.page{
+    color: var(--primary-text-color);
+    background-color: #F5F5F5;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+.page a {
+    text-decoration: none;
+}
+
+/* ЛОГО */
+.logo{
+    color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        font-family: Raleway, sans-serif;
+}
+
+.logo-first{
+    color: var(--select-text-color) 
+ }
+
+.footer .logo{
+    color: var(--second-color-logo-footer);
+}
+
+/* Header та навігація */
+.page-header {
+    color: var(--title-text-color);
+}
+
+.site-nav .link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--select-text-color);
+}
+
+.site-nav .link.current{
+    color: var(--select-text-color);
+}
+.auth-nav .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--select-text-color);
+}
+/* Герой */
+.hero{
+    color:black
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Секція  */
+.section h1,
+.section h2,
+.section h3{
+    color: var(--title-text-color);
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+
+}
+.list .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.list .text{
+    font-weight: 400;
+    line-height: 1.71;
+    font-size: 14px;
+}
+
+.list .com-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.list .com-text{
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+}
+/* FOOTER */
+.footer{
+    background-color: var(--footer-bg-color);
+}
+.list .addr-mail-tel{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--addr-color-tel-mail);
+}
+
+.list .addr-mail-tel:hover,
+.list .addr-mail-tel:focus {
+    color: var(--select-text-color);
+}
+.list .addr-city{
+    font-style: normal;
+    color: var(--addr-color-city);
+    background: #2F303A;
+}
+.list .addr-city:hover,
+.list .addr-city:focus {
+    color: var(--select-text-color);
+}
+
+/* Button */
+.hero .button-hero {
+    color: var(--button-select-text-color);
+    background-color: var(--button-select-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+.button:hover,
+.button:focus{
+    color: var(--button-select-text-color);
+    background-color: var(--button-select-color);
+}
+
+/* Картки портфоліо */
+ .card{ 
+    color: var(--primary-text-color);
+}
+
+.card .card-header{
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;  
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+.card .card-text{
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 400;
+}

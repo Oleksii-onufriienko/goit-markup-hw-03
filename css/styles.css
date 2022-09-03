@@ -192,12 +192,21 @@ img {
 .hero {
     color: black;
     text-align: center;
-
+ }
+.section-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
+    /* box-sizing: border-box; */
+    display: block;    
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
-   
+
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -213,6 +222,8 @@ img {
     /* background-color: tomato; */
 }
 
+
+
 .section.top-padd-minus{
     padding-top: 0;
 }
@@ -225,7 +236,7 @@ img {
 
 .section-title {
     margin-bottom: 50px;
-
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -371,7 +382,7 @@ img {
 .list-buttom{
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   
 }
 
